@@ -15,6 +15,8 @@ ratios, and presents peer comparisons through a Power BI dashboard.
 ![Balance Sheet & Liquidity Composition](docs/screenshots/tab3_balance_sheet.png)
 *Tab 3 — Credit-Deposit and Investment-Deposit ratios alongside a bank-by-year balance sheet matrix.*
 
+📥 **[Download the Power BI Report (.pbix)](docs/Bankscope(dashboard).pbix)**
+
 ## Scope
 
 **Banks covered:** HDFC Bank, ICICI Bank, State Bank of India, Axis Bank, Kotak

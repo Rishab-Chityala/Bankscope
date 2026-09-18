@@ -144,30 +144,7 @@ Stated plainly, in keeping with this project's approach throughout:
   MD&A-table extraction that also blocks NPA%/CRAR (see above), so
   `compute_ratios.py` currently writes `computed_value` only.
 
-## Setup
 
-
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-
-
-
-cp .env.example .env
-# fill in your PostgreSQL credentials
-psql -U postgres -d bankscope -f sql/schema.sql
-
-
-## Running the pipeline
-
-
-python -m src.load_to_db        # PDFs -> raw_line_items (~20-30 min for all 25 files)
-python -m src.normalize         # raw_line_items -> financial_facts
-python -m src.compute_ratios    # financial_facts -> computed_ratios
-
-
-Then open the `.pbix` file (or connect a fresh Power BI report to PostgreSQL
-using `vw_powerbi_ratios` and `vw_powerbi_financial_facts_wide`).
 
 ## Repo structure
 

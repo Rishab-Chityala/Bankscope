@@ -148,13 +148,14 @@ Stated plainly, in keeping with this project's approach throughout:
 
 ## Repo structure
 
+```
 bankscope/
 ├── data/
 │   └── raw_reports/{bank}/{BANK_YEAR}.pdf   # gitignored — not committed
 ├── sql/
 │   └── schema.sql
 ├── src/
-│   ├── init.py
+│   ├── __init__.py
 │   ├── config.py
 │   ├── extraction.py          # statement locator + page-to-DataFrame parser
 │   ├── load_to_db.py          # extraction output -> raw_line_items
@@ -166,9 +167,10 @@ bankscope/
 │   ├── progress.md            # full build log: every bug found, root-caused, and fixed
 │   └── screenshots/           # dashboard tab screenshots
 ├── requirements.txt
-├── .env
+├── .env.example
 ├── .gitignore
 └── README.md
+```
 
 `test_locater_batch.py` and `diagnose_headers.py` are dev tools built along the
 way for diagnosing extraction bugs one bank/year at a time — not part of the

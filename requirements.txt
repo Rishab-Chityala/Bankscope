@@ -1,0 +1,26 @@
+# --- PDF table extraction ---
+pdfplumber==0.11.4
+
+# camelot-py requires Ghostscript installed as a SYSTEM dependency (not pip-installable):
+#   macOS:   brew install ghostscript
+#   Ubuntu:  sudo apt-get install ghostscript
+#   Windows: https://ghostscript.com/releases/gsdnld.html
+
+# --- Data handling ---
+pandas==2.2.3
+# numpy is intentionally NOT pinned to an exact version: 1.26.4 (an
+# earlier pin here) has no prebuilt Windows wheel for Python 3.13+, which
+# forces pip to build from source and fail without a C compiler toolchain
+# installed. Letting pip pick the newest version compatible with pandas
+# 2.2.3 avoids that entirely, on any Python version.
+numpy>=1.26.4
+
+# --- PostgreSQL ---
+psycopg2-binary==2.9.10
+sqlalchemy==2.0.36
+
+# --- Config / env ---
+python-dotenv==1.0.1
+
+# --- Dev / notebooks (optional, for exploring table structure) ---
+jupyter==1.1.1

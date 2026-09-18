@@ -181,5 +181,5 @@ find and confirm most of the bugs listed under *Known constraints*.
 
 - Kotak's coordinate-based column-splitting parser
 - Gross/Net NPA % and CRAR, once MD&A-table extraction is built
-- Extending SBI's dashboard window to FY2025–2026
+- Extending dashboard window to FY2025–2026
 - Automating the PDF download step (currently manual)
